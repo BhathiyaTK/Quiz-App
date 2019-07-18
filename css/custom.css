@@ -1,0 +1,294 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/* ========== Fonts =========== */
+@font-face{
+	font-family: Font_1;
+	src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face{
+	font-family: Font_2;
+	src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face{
+	font-family: Font_3;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face{
+	font-family: Font_4;
+	src: url(../fonts/Roboto-Medium.ttf);
+}
+
+/* ============ Login page ==================*/
+#login-section{
+	background-image: linear-gradient(to top right, #2981db, #fff);
+	height: 100vh;
+	text-align: center;
+}
+.login-content{
+	width: 100%;
+	height: 25vh;
+	transform: translate(0, 50%);
+}
+.app-title h1{
+	font-family: Font_2;
+	color: #164370;
+}
+.login-form-div{
+	width: 30%;
+	margin: 0 auto;
+	padding: 70px 50px 40px;
+	border-radius: 30px;
+	background: rgba(0,0,0,0.4);
+}
+.login-form-div h4{
+	color: #fff;
+}
+.login-form-div form input{
+	width: 100%;
+	margin: 5px 0;
+}
+.login-form-div form input[type=text],.login-form-div form input[type=password]{
+	padding: 8px 20px;
+	font-size: 14px;
+	font-family: Font_3;
+	color: #123456;
+	border-radius: 5px;
+	border:0;
+}
+.login-form-div form input[type=submit]{
+	border: 0;
+	border-radius: 30px;
+	font-family: Font_1;
+	padding: 10px 40px;
+	margin-top: 30px;
+	background: #123456;
+	color: #fff;
+	transition: 0.3s;
+}
+.login-form-div form input[type=submit]:hover{
+	background: #164370;
+}
+.user-login-icon{
+	width: 100%;
+}
+.user-login-icon img{
+	width: 6.5%;
+	position: relative;
+	bottom: -40px;
+}
+.reg-link, .login-link{
+	color: #111;
+	font-size: 13px;
+	margin-top: 15px;
+}
+.reg-link a, .login-link a{
+	font-family: Font_1;
+	color: #ccc;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.reg-link a:hover, .login-link a:hover{
+	text-decoration: none;
+	color: #fff;
+	padding-top: 1px;
+	border-top: 2px solid #123456;
+}
+
+/* =================== Reg.php styles ================= */
+#reg-section{
+	height: 100vh;
+	background-image: url(../images/back1.png);
+	background-size: cover;
+}
+.reg-bg-blur{
+	height: 100vh;
+	background: rgba(0,0,0,0.7);
+}
+.reg-content{
+	width: 100%;
+	height: 25vh;
+	transform: translate(0, 50%);
+}
+.reg-title{
+	text-align: center;
+	margin-bottom: 40px;
+	color: #fff;
+	font-family: Font_2;
+}
+.reg-form-content{
+	width: 40%;
+	margin: 0 auto 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 40px 50px;
+}
+.reg-form-content form input{
+	width: 100%;
+	margin: 10px 0;
+}
+.reg-form-content form input[type=text], .reg-form-content form input[type=email], .reg-form-content form input[type=password]{
+	padding: 8px 20px;
+	border:0;
+	font-size: 14px;
+	font-family: Font_3;
+	color: #123456;
+	border-radius: 5px;
+}
+.reg-btn-div{
+	width: 60%;
+	margin: 20px auto 0;
+}
+.reg-form-content form input[type=submit]{
+	color: #fff;
+	font-family: Font_1;
+	letter-spacing: 2px;
+	padding: 10px 30px;
+	background: #2981db;
+	border: 0;
+	border-radius: 30px;
+	transition: 0.3s;
+}
+.reg-form-content form input[type=submit]:hover{
+	background: #216dba;
+}
+.login-link{
+	text-align: center;
+	color: #ccc;
+}
+.login-link a{
+	color: #4ca5ff;
+}
+.login-link a:hover{
+	border-top: 2px solid #2981db;
+}
+.reg_msg_div{
+	width: 50%;
+	margin: 0 auto;
+}
+.log_msg_div{
+	width: 35%;
+	margin: auto;
+	text-align: left;
+}
+.alert{
+	font-family: sans-serif;
+}
+
+/* ==================== Quiz.php styles ================ */
+#quiz-section{
+	width: 100%;
+	height: auto;
+	background-image: url(../images/back2.png);
+	background-size: cover;
+	padding-bottom: 80px;
+}
+.logout-btn-div{
+	text-align: right;
+	padding-top: 30px;
+}
+.logout-btn-div span{
+	float: left;
+	padding: 0 20px;
+	font-family: Font_2;
+	color: #164370;
+}
+.logout-btn-div span b{
+	font-family: sans-serif;
+}
+.logout-btn-div a{
+	font-family: Font_3;
+	font-size: 15px;
+	padding: 15px 10px 15px 15px;
+	background: #e21b25;
+	color: #fff;
+	border-radius: 10px 0 0 10px;
+	box-shadow: 1px 1px 7px 7px #ccc;
+	transition: 0.3s;
+}
+.logout-btn-div a:hover{
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 25px 15px 30px;
+	border-radius: 25px 0 0 25px;
+}
+.quiz-title{
+	color: #2481bf;
+	text-align: center;
+	font-family: Font_2;
+	padding: 20px 0 50px 0;
+	text-shadow: 2px 2px 5px #aaa;
+}
+.quiz-container{
+	width: 50%;
+	margin: 0 auto 30px;
+	padding: 30px 40px;
+	background: rgba(255,255,255,0.7);
+	border-radius: 20px;
+	box-shadow: 1px 1px 7px 7px #ccc;
+}
+.question h3{
+	font-family: sans-serif;
+	margin-bottom: 20px;
+}
+.question p{
+	font-family: Font_2;
+	letter-spacing: 0.5px;
+	word-spacing: 2px;
+}
+.answers{
+	margin-left: 20px;
+	font-family: Font_3;
+	font-size: 15px;
+}
+.buttons{
+	text-align: center;
+}
+.buttons input{
+	color: #fff;
+	font-family: Font_3;
+	font-size: 15px;
+	padding: 13px 40px;
+	background: #123456;
+	border: 0;
+	border-radius: 25px;
+	transition: 0.3s;
+}
+.buttons input:hover{
+	text-decoration: none;
+	color: #fff;
+	background: #164370;
+}
+
+/* ================= Process.php styles ======================= */
+#mark-section{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../images/back2.png);
+	background-size: cover;
+	padding-bottom: 80px;
+}
+.result-div{
+	width: 80%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.result-title-div{
+	padding: 30px 0;
+	text-align: center;
+}
+.result-title-div h2{
+	font-family: Font_2;
+	font-size: 40px;
+	color: #2481bf;
+}
+.all-results table{
+	background: rgba(255,255,255,0.5);
+}
+.all-results table tbody{
+	font-family: Font_2;
+}
+.center{
+	text-align: center;
+}
